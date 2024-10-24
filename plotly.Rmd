@@ -1,0 +1,76 @@
+---
+title: "Plotly"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+# Problem 2 
+
+We will be creating interactive plots in plotly.
+
+```{r, message = FALSE}
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+```
+
+We will use the `ny_noaa` dataset from the `p8105.datasets` package. This dataset includes weather data/summary statistics from weather stations around the world. Each observation holds information (e.g., variables included are `id`, `date`, `prcp`, `snow`, `snwd`, `tmax`, `tmin`) from a single weather station. 
+
+```{r}
+data("ny_noaa")
+```
+
+We will do some initial data cleaning/subsetting. 
+
+```{r}
+weather_df = 
+  rnoaa::meteo_pull_monitors(
+    c("USW00094728", "USW00022534", "USS0023B17S"),
+    var = c("PRCP", "TMIN", "TMAX"), 
+    date_min = "2021-01-01",
+    date_max = "2022-12-31") |>
+  mutate(
+    name = case_match(
+      id, 
+      "USW00094728" ~ "CentralPark_NY", 
+      "USW00022534" ~ "Molokai_HI",
+      "USS0023B17S" ~ "Waterhole_WA"),
+    tmin = tmin / 10,
+    tmax = tmax / 10) |>
+  select(name, id, everything())
+```
+
+Let's create some plots! First, I will be creating a scatterplot, showing the relationship between `tmax` (maximum temperature (tenths of degrees C)) and `tmin` (minimum temperature (tenths of degrees C)). 
+
+```{r}
+weather_df |>
+  mutate(text_label = str_c("Name: ", name)) |>
+  plot_ly(
+    x = ~tmax, y = ~tmin, color = ~name,
+    type = "scatter", mode = "markers"
+  )
+```
+
+Next, I will be creating a boxplot. 
+
+```{r}
+weather_df |>
+  mutate(name = fct_reorder(name,tmin)) |>
+  plot_ly(
+    x = ~ name, y = ~prcp,
+    type = "box", colors = "viridis")
+```
+
+Lastly, I will be creating a bar chart with the number of the weather stations observations for the 3 included (NY, HI, WA) in the cleaned `ny_noaa` dataset. 
+
+```{r}
+weather_df |>
+  count(name) |> 
+  mutate(neighbourhood = fct_reorder(name, n)) |> 
+  plot_ly(
+    x = ~name, y = ~n, 
+    type = "bar")
+```
+
