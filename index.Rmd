@@ -8,5 +8,7 @@ output:
 
 # Making a Website
 
+This is a website about Shehzrin Shah. 
 
+If you would like to learn more about her academic and professional experience, visit [this page](about.html). 
 
