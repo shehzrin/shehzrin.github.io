@@ -1,0 +1,12 @@
+---
+title: "Shehzrin Shah"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+This is a website about Shehzrin Shah. 
+
+If you would like to learn more about her academic and professional experience, visit [this page](resume.html). 
+
