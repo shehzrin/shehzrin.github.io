@@ -1,0 +1,77 @@
+---
+title: "Shehzrin's Academic and Professional Experience "
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+**EDUCATION**
+
+  * **COLUMBIA UNIVERSITY MAILMAN SCHOOL OF PUBLIC HEALTH**, New York, NY	 
+  
+  September 2023 – May 2025
+  
+  Master of Public Health in Health Policy and Management: Applied Biostatistics and Public Health Data Science Certificate
+
+  * **UNIVERSITY OF HOUSTON, COLLEGE OF ENGINEERING**, Houston, TX
+  
+  August 2022 – May 2025
+  
+  Master of Science in Engineering Technology: Computational Health Informatics Track (Dual-enrolled)
+
+  * **THE UNIVERSITY OF TEXAS AT AUSTIN, COLLEGE OF LIBERAL ARTS**, Austin, TX
+  
+  August 2019 – May 2022
+  
+  Bachelor of Science in Psychology: Pre-Health Professions Certificate 
+  
+  Awards: Dean’s Honor List (three semesters) 
+
+**EXPERIENCE**
+
+  * **COLUMBIA UNIVERSITY MAILMAN SCHOOL OF PUBLIC HEALTH** - New York, NY 
+  
+August 2024 - present 
+
+Graduate Teaching Assistant: Quality of Health Care & Strategic Issues in Healthcare Quality
+
+  * **BAYLOR COLLEGE OF MEDICINE, CENTER FOR MEDICAL ETHICS AND HEALTH POLICY** - Houston, TX
+  
+June 2024 - August 2024
+
+Graduate Administrative Intern 
+
+  * **MAEVILLE PEDIATRICS** - Houston, TX		
+  
+October 2022 - August 2023 
+
+Clinic Coordinator 
+
+  * **THE UNIVERSITY OF TEXAS AT AUSTIN APPLIED PSYCHOLOGY RESEARCH LAB** - Austin, TX  
+  
+July 2021 - July 2022
+
+Research Assistant 	
+
+  * **DEEPSCRIBE** - San Francisco, CA; Remote 				
+  
+August 2021 - July 2022	
+
+Medical Scribe
+
+**LEADERSHIP**
+
+  * **THE UNIVERSITY OF TEXAS AT AUSTIN, LIBERAL ARTS COUNCIL** – Austin, TX		
+  
+August 2019 - May 2022
+
+Member & Publicity Committee Official
+
+
+
+
+
+
+
+
